@@ -23,8 +23,8 @@ export default function WeatherCarousel({ weatherData }) {
     <div id="weather-carousel">
       <p>
         Weather :{" "}
-        {currentWeather.name}: {Math.round(currentWeather.main.temp)}°C,{" "}
-        {currentWeather.weather[0].description}
+        {currentWeather.name}, {Math.round(currentWeather.main.temp)}°C{" - "}
+        {currentWeather.weather[0].description}.
       </p>
     </div>
   );
