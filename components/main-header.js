@@ -4,7 +4,7 @@ import WeatherCarousel from "./weather-carousel";
 import { fetchWeatherData } from "../lib/weather";
 
 export default async function MainHeader() {
-  const cities = ["Paris", "London", "New York", "Tokyo", "Berlin"];
+  const cities = ["Paris", "London", "New York", "Tokyo", "Berlin", "Bangkok"];
   let weatherData = [];
 
   try {

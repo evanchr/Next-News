@@ -8,7 +8,7 @@ export default function WeatherCarousel({ weatherData }) {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % weatherData.length);
-    }, 5000); 
+    }, 4000); 
 
     return () => clearInterval(interval); 
   }, [weatherData.length]);
@@ -21,9 +21,9 @@ export default function WeatherCarousel({ weatherData }) {
 
   return (
     <div id="weather-carousel">
-      <h2>WEATHER</h2>
       <p>
-        {currentWeather.name}: {currentWeather.main.temp}°C,{" "}
+        Weather :{" "}
+        {currentWeather.name}: {Math.round(currentWeather.main.temp)}°C,{" "}
         {currentWeather.weather[0].description}
       </p>
     </div>
