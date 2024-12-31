@@ -14,7 +14,7 @@ export default function WeatherCarousel({ weatherData }) {
   }, [weatherData.length]);
 
   if (!weatherData.length) {
-    return <p>Aucune donnée météo disponible.</p>;
+    return <p>Weather data unavailable.</p>;
   }
 
   const currentWeather = weatherData[currentIndex];
